@@ -1,0 +1,188 @@
+:root {
+	--darkBlueColor: #1f2937;
+	--white: #f9faf8;
+	--lightGray: #e5e7eb;
+	--blue: #3882f6;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	padding: 0 7.5rem;
+	background-color: var(--darkBlueColor);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 1rem 0;
+}
+
+nav h2 {
+	font-size: 24px;
+	color: var(--white);
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+}
+
+ul li {
+	font-size: 18px;
+	margin: 0 0.5rem;
+}
+
+ul li:last-child {
+	margin: 0 0 0 0.5rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--lightGray);
+}
+
+.twoCol {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 5rem 0;
+}
+
+.leftSide {
+	flex: 1;
+}
+
+.leftSide h1 {
+	font-size: 48px;
+	font-weight: 700;
+	color: var(--white);
+}
+
+.leftSide p {
+	font-size: 18px;
+	color: var(--lightGray);
+	margin-bottom: 0.5rem;
+}
+
+.rightSide {
+	flex: 1;
+	height: 15rem;
+	background-color: gray;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section {
+	padding: 3rem 7.5rem;
+}
+
+section:nth-child(odd) {
+	background-color: var(--lightGray);
+}
+
+section h2 {
+	font-size: 36px;
+	font-size: 700;
+	color: var(--darkBlueColor);
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.blocks {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.block {
+	width: 10rem;
+}
+
+.block p {
+	text-align: center;
+}
+
+.image {
+	width: 10rem;
+	height: 10rem;
+	border: 4px var(--blue) solid;
+	border-radius: 12px;
+	margin-bottom: 0.5rem;
+}
+
+.quote {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+blockquote {
+	align-self: center;
+	font-size: 36px;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.author {
+	margin-top: 0.5rem;
+	align-self: flex-end;
+	font-size: 30px;
+}
+
+.callToAction {
+	background-color: var(--blue);
+	padding: 2rem 4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	border-radius: 5px;
+}
+
+.signupText h4 {
+	font-size: 1.5rem;
+	color: var(--white);
+}
+
+.signupText p {
+	font-size: 1rem;
+	color: var(--lightGray);
+}
+
+footer {
+	background-color: var(--darkBlueColor);
+	padding: 2rem 0;
+	color: var(--white);
+	text-align: center;
+}
+
+/* button */
+.btn {
+	background-color: var(--blue);
+	color: var(--white);
+	border: 0;
+	padding: 0.25rem 1.5rem;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+.btn--secondary {
+	border: 2px solid var(--white);
+}
+
+.btn:active {
+	transform: scale(0.98);
+}
